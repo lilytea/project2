@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #ececec;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+canvas {
+}
+
+#Mom {
+  width: 640px;
+  height: 640px;
+  margin-left: auto;
+  margin-right:auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+#text {
+  margin-top: 10px;
+  width: 100%;
+  height: 85px;
+  text-align: center;
+  font-size: 25pt;
+ 
+  font-family: "Lucida Console", "Courier New", monospace;
+  color:#006400;
+}
+
+#inner {
+  font-size: 15pt;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-weight: normal;
+   color:#008B8B;
+}
+
+.back {
+  position: absolute;
+  left:45%;
+  top: 750px;
+  font-size: 25pt;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
