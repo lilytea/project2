@@ -44,7 +44,7 @@ body {
   perspective: 1000px;
 }
 #cover {
-  width: 300x;
+  width: 640x;
   height: 300px;
   margin: auto;
   display: flex;
