@@ -1,0 +1,101 @@
+/* styles.css */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position:relative;
+  height: 100vh;
+  display: flex;
+  background: #ececec;
+  flex-wrap: wrap;
+ 
+}
+
+.text {
+  position:absolute;
+  left:45%;
+  top:725px;
+  font-size: 25pt;
+  font-family: "Lucida Console", "Courier New", monospace;
+  
+}
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+#cover {
+  width: 300x;
+  height: 300px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+  z-index: 1;
+  position: absolute;
+  background-color:rgba(255, 255, 255, 0.8);
+  align-self:center;
+  opactity:0.5;
+  align-items: center;
+  justify-content: center;
+  font-size: 40pt;
+  visibility: hidden;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333%);
+  margin: 1px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  transform-style: preserve-3d;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+.front-face,
+.back-face {
+  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  background: grey;
+  backface-visibility: hidden;
+  background-color:#E8E5D1;
+  display:flex;
+   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.face{
+  width:85%;
+  height:85%;
+  
+
+}
+
+.face_sp{
+  width:50%;
+  height:50%;
+  
+
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+.front-face {
+  transform: rotateY(180deg);
+}
