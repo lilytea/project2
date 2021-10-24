@@ -22,6 +22,18 @@ body {
   font-family: "Lucida Console", "Courier New", monospace;
   
 }
+#text1{
+  font-size: 25pt;
+  
+
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+#text2{
+  font-size: 20pt;
+  
+ 
+  font-family: "Lucida Console", "Courier New", monospace;
+}
 
 .memory-game {
   width: 640px;
